@@ -32,8 +32,8 @@ namespace CasaDoCodigo.Controllers
                 _pedidoRepository.AddItem(codigo);
             }
 
-            //Pedido pedido = _pedidoRepository.GetPedido();
-            Pedido pedido = _pedidoRepository.GetPedido(4);
+            Pedido pedido = _pedidoRepository.GetPedido();
+            //Pedido pedido = _pedidoRepository.GetPedido(4);
             return View(pedido.Itens);
         }
 
